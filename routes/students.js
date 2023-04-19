@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Routes();
 
 
+
 // Get all students
 app.get('/students', async (req, res) => {
     try {
