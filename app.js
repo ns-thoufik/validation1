@@ -6,6 +6,9 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 
+
+const studentsRoute = require("./routes/students");
+app.use("students", studentsRoute);
 // Use body-parser middleware to parse request bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
